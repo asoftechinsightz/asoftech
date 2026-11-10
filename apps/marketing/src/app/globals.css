@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f7faff;
+  --foreground: #14243b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+::selection {
+  background: rgba(23, 107, 255, 0.2);
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+a {
+  text-underline-offset: 3px;
+}
