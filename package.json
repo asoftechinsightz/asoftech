@@ -1,0 +1,20 @@
+{
+  "name": "asoftech",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w @asoftech/marketing",
+    "build": "npm run build -w @asoftech/marketing",
+    "start": "npm run start -w @asoftech/marketing",
+    "lint": "npm run lint -w @asoftech/marketing",
+    "typecheck": "npm run typecheck -w @asoftech/marketing",
+    "test": "npm run test -w @asoftech/marketing"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

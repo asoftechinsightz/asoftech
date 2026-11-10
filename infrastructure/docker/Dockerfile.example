@@ -1,0 +1,18 @@
+# EXAMPLE ONLY — do not build/deploy to Hostinger in this phase.
+# FROM node:22-alpine AS deps
+# WORKDIR /app
+# COPY package.json package-lock.json ./
+# COPY apps/marketing/package.json apps/marketing/
+# COPY packages ./packages
+# RUN npm ci
+#
+# FROM deps AS builder
+# COPY . .
+# RUN npm run build -w @asoftech/marketing
+#
+# FROM node:22-alpine AS runner
+# WORKDIR /app
+# ENV NODE_ENV=production
+# COPY --from=builder /app ./
+# EXPOSE 3000
+# CMD ["npm", "run", "start", "-w", "@asoftech/marketing"]
